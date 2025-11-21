@@ -9,56 +9,48 @@
         body {
             font-family: "Poppins", sans-serif;
             margin: 0;
-            background: #ffe6ef; /* light pink */
+            background: #ffe6ef;
             color: #4a0015;
         }
-
         header {
-            background: #d3003f; /* cherry red */
+            background: #d3003f;
             color: white;
             padding: 20px;
             text-align: center;
         }
-
         .market-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             padding: 40px;
         }
-
         .card {
             background: white;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             overflow: hidden;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-
         .card:hover {
-            transform: scale(1.04);
+            transform: translateY(-6px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
         }
-
         .card img {
             width: 100%;
             height: 180px;
             object-fit: cover;
         }
-
         .card-content {
             padding: 15px;
         }
-
         .card-content h3 {
             margin-top: 0;
             color: #d3003f;
         }
-
         .price {
             font-weight: bold;
             color: #a0002c;
         }
-
         button {
             background: #d3003f;
             border: none;
@@ -68,12 +60,13 @@
             cursor: pointer;
             margin-top: 10px;
             width: 100%;
+            transition: 0.25s ease;
         }
-
         button:hover {
             background: #b00034;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
-
         footer {
             text-align: center;
             padding: 20px;
@@ -90,6 +83,7 @@
 
 <div class="market-container">
 
+    <!-- Original Products -->
     <div class="card">
         <img src="https://i.imgur.com/4cQ9ZKz.jpeg" alt="Taiwan Brown Sugar Boba Candy">
         <div class="card-content">
@@ -130,11 +124,80 @@
         </div>
     </div>
 
-</div>
+    <!-- NEW PRODUCTS -->
 
-<footer>
-    © 2025 Viral Sweets Marketplace — Taste the world 🌎🍬
-</footer>
+    <div class="card">
+        <img src="https://i.imgur.com/n6f4dMT.jpeg" alt="Turkish Delight">
+        <div class="card-content">
+            <h3>Turkish Delight</h3>
+            <p>Soft, chewy, and dusted in powdered sugar.</p>
+            <p class="price">$6.80</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
 
-</body>
-</html>
+    <div class="card">
+        <img src="https://i.imgur.com/h5GfFrk.jpeg" alt="French Macarons">
+        <div class="card-content">
+            <h3>French Macarons</h3>
+            <p>Elegant, crispy outside, soft inside.</p>
+            <p class="price">$14.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.imgur.com/qNy47q2.jpeg" alt="Italian Gelatin Candy">
+        <div class="card-content">
+            <h3>Italian Fruit Gel Candies</h3>
+            <p>Bright, fruity, and beautifully crafted.</p>
+            <p class="price">$8.75</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.imgur.com/CXu8i0i.jpeg" alt="Indian Mango Candy">
+        <div class="card-content">
+            <h3>Indian Mango Hard Candy</h3>
+            <p>Sweet and tangy with real mango extract.</p>
+            <p class="price">$3.95</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.imgur.com/8kgM0wC.jpeg" alt="Brazilian Brigadeiros">
+        <div class="card-content">
+            <h3>Brazilian Brigadeiros</h3>
+            <p>Chocolate truffle-like sweets rolled in sprinkles.</p>
+            <p class="price">$10.50</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.imgur.com/I3YqXGu.jpeg" alt="Spanish Turrón">
+        <div class="card-content">
+            <h3>Spanish Turrón</h3>
+            <p>Honey almond nougat with irresistible crunch.</p>
+            <p class="price">$11.20</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.imgur.com/G0xY5NH.jpeg" alt="German Gummy Bears">
+        <div class="card-content">
+            <h3>German Gummy Bears</h3>
+            <p>Classic fruity gummies from Europe’s favorite maker.</p>
+            <p class="price">$4.75</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.imgur.com/YuYRmlA.jpeg" alt="UK Sherbet Candy">
+        <div class="card-content">
+            <h3>British Sherbet Fizz Candy</h3>
+            <p>Tangy fizzy powder with nostalgic sweetness.</p
